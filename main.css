@@ -25,14 +25,14 @@ body {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0 0 10px 0;
   color: #DC2828;
 }
 
 p {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   margin: 0 0 0 ;
   color: black;
@@ -53,7 +53,7 @@ p {
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   background-color: red;
   border: 2px solid white;
   border-radius: 2px;
@@ -71,6 +71,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 220px;
+  justify-content: space-between;
 }
 
 .carousel__slide__banner__button {
@@ -92,6 +94,27 @@ p {
   max-height: 600px;
   object-fit: cover;
   object-position: bottom;
+}
+
+@media (min-width: 400px) {
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 13px;
+  }
+  
+  .carousel__slide__sticker {
+    padding: 10px 20px;
+  }
+
+}
+@media (min-width: 600px) {
+  .carousel__slide__banner {
+    min-height: 200px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -119,6 +142,8 @@ p {
     bottom: 20px;
     padding: 20px;
     flex-direction: row;
+    min-height: unset;
+    justify-content: unset;
   }
 
   .carousel img {
